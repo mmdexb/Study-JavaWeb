@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert(typeof 3);
+        alert(typeof 3.14);
+
+        alert(typeof "a");
+        alert(typeof "Hello");
+
+        alert(typeof true);
+        alert(typeof false);
+
+        alert(typeof null);
+        
+        var a=10;
+        alert(a=="10");//==会进行类型转换 返回true
+        alert(a==="10");//===不进行类型转化你返回false
+
+
+        // 类型转换 - 其他类型转为数字
+        // alert(parseInt("12")); //12
+        // alert(parseInt("1222A45")); //1222
+        // alert(parseInt("A45")); //NaN
+
+
+        // if(0){
+        //     alert("If");
+        // } 
+
+
+
+
+
+
+        // 类型转换 - 其他类型转为boolean
+        // if(0){ //false
+        //     alert("0 转换为false");
+        // }
+
+        // if(NaN){ //false
+        //     alert("NaN 转换为false");
+        // }
+
+        // if(-1){ //true
+        //     alert("除0和NaN其他数字都转为 true");
+        // }
+
+        // if(""){ //false
+        //     alert("空字符串为 false, 其他都是true");
+        // }
+            
+        // if(null){ //false
+        //     alert("null 转化为false");
+        // }
+
+        // if(undefined){ //false
+        //     alert("undefined 转化为false");
+        // }
+
+        /*
+            false：
+                0    NaN
+                ""
+                null
+                undefined
+    */
+
+
+    </script>
+</body>
+</html>

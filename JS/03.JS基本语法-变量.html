@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        var a="陈薏帆";
+        alert(a);
+
+        //var定义变量 为全局变量
+        {
+            var x="全局变量";
+        }
+        alert(x);
+
+        //var定义变量 可重复定义
+        var x="重复定义";
+        alert(x);
+
+        //let关键字 只在代码块内有效 不准重复定义
+        {
+            let j="let定义"
+            alert(j);
+        }
+        // alert(j);
+
+        //const关键字 常量
+        const m = 10.2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[10,5,"hello"];
+        // for (let index = 0; index < arr.length; index++) {
+        //     const element = arr[index];
+        //     alert(element)
+            
+        // }
+
+        arr.forEach(element => {
+           console.log(element);
+        });
+
+        //push 添加元素到数组末尾
+        arr.push("你好");
+        console.log(arr[arr.length-1]);
+
+        //splice 删除元素
+        arr.splice(2,2);
+        arr.forEach(e=>{
+            console.log(e);
+        })
+
+        
+    </script>
+
+</body>
+</html>
