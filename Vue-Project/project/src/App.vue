@@ -1,18 +1,16 @@
 <template>
   <div>
-    <!-- <h1>{{message}}</h1> -->
-    <element-view>
-      
-    </element-view>
+    <router-view></router-view>
 
   </div>
 </template>
 
 
 <script>
-import ElementView from './views/element/ElementView.vue'
+
+
 export default {
-  components: { ElementView },
+  components: {  },
   data() {
     return {
       message:"Hello Vue!"
