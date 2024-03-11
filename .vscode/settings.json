@@ -5,5 +5,8 @@
         "**/target",
         "**/bin",
         "**/archetype-resources"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "maven.view": "hierarchical"
 }
