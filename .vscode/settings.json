@@ -8,5 +8,21 @@
     ],
     "java.configuration.updateBuildConfiguration": "disabled",
     "java.compile.nullAnalysis.mode": "automatic",
-    "maven.view": "hierarchical"
+    "maven.view": "hierarchical",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "local",
+            "username": "root",
+            "password": "1qaz2wsx",
+            "database": "db01"
+        }
+    ]
 }

@@ -24,27 +24,18 @@ public class weather {
         String url = "https://xmairavt7.xiamenair.com/WarningPage?WarningAirports="+icao;
         
         try {
-            // 创建HttpClient实例
             CloseableHttpClient httpClient = HttpClients.createDefault();
-            
-            // 创建HttpGet请求
             HttpGet httpGet = new HttpGet(url);
-            
-            // 发送请求并获取响应
             CloseableHttpResponse response = httpClient.execute(httpGet);
-            
-            // 获取响应内容
+
             HttpEntity entity = response.getEntity();
             String html = EntityUtils.toString(entity);
             
-            // 使用Jsoup解析HTML
             Document document = Jsoup.parse(html);
             
             // 获取第二个div元素的文字内容
             Element secondDiv = document.select("div").get(1);
             String metar = secondDiv.select("font").text();
-            
-            // 关闭连接
             response.close();
             httpClient.close();
             
