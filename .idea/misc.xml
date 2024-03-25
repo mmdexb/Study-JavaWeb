@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/spring-web-quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/tlias/pom.xml" />
       </list>
     </option>
   </component>

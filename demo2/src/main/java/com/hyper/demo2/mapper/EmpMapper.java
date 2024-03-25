@@ -34,7 +34,13 @@ public interface EmpMapper {
     public Emp getByid(Integer id);
 
 
-    @Select("select * from emp where name like '%${name}%' and gender=#{gender} and entrydate" +
-            " between #{begin} and #{end} order by update_time desc")
+//    @Select("select * from emp where name like concat('%',#{name},'%') and gender=#{gender} and" +
+//            " entrydate between #{begin} and #{end} order by update_time desc")
+//    public List<Emp> list(String name, Short gender, LocalDate begin,LocalDate end);
+
     public List<Emp> list(String name, Short gender, LocalDate begin,LocalDate end);
+
+    public void update2(Emp emp);
+
+    public void deleteByids(List<Integer> ids);
 }

@@ -1,15 +1,15 @@
 package com.hyper.demo2;
 
 import com.hyper.demo2.mapper.EmpMapper;
-import com.hyper.demo2.mapper.UserMapper;
 import com.hyper.demo2.pojo.Emp;
-import com.hyper.demo2.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @SpringBootTest
@@ -68,8 +68,29 @@ class Demo2ApplicationTests {
 
     @Test
     public void testList(){
-        List<Emp> empList=empMapper.list("张",(short)1,LocalDate.of(2010,1,1),LocalDate.of(2020,1,1));
+        List<Emp> empList=empMapper.list("张",null,null,null);
         System.out.println(empList);
+    }
+
+    @Test
+    public void Testupdate2(){
+        Emp emp =new Emp();
+
+        emp.setId(3);
+        emp.setUsername("Tom74");
+        emp.setName("汤姆74");
+        emp.setUpdateTime(LocalDateTime.now());
+
+
+        empMapper.update2(emp);
+
+    }
+
+    @Test
+    public void DeleteByids(){
+        List<Integer> ids= Arrays.asList(13,14,15);
+        empMapper.deleteByids(ids);
+
     }
 
 
